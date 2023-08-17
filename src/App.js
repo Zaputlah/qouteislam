@@ -9,7 +9,7 @@ function App() {
   // Fungsi untuk mengambil kutipan acak dari API
   const fetchQuote = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/data');
+      const response = await axios.get('https://apiquoteislam.vercel.app/data');
       const data = response.data;
 
       const randomIndex = Math.floor(Math.random() * data.length);
