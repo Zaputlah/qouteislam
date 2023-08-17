@@ -9,10 +9,12 @@ function App() {
   // Fungsi untuk mengambil kutipan acak dari API
   const fetchQuote = async () => {
     try {
-      const response = await axios.get('https://api.quotable.io/random');
+      const response = await axios.get('http://localhost:3000/data');
       const data = response.data;
-      setQuote(data.content);
-      setAuthor(data.author);
+
+      const randomIndex = Math.floor(Math.random() * data.length);
+      setQuote(data[randomIndex].quote);
+      setAuthor(data[randomIndex].author);
     } catch (error) {
       console.error('Error fetching quote:', error);
     }
@@ -29,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Random Quote Generator</h1>
+      <h1>Random Quote islam Generator</h1>
       <div className="quote-container">
         <blockquote>
           <p>{quote}</p>

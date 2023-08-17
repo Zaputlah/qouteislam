@@ -10,7 +10,7 @@ h1 {
 
 blockquote {
   background-color: #f0f0f0;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #00ff4c;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@ cite {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #00ff4c;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -39,5 +39,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #b38300;
 }
